@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.floating-title {
+  font-size: 2.5rem;
+  color: #ff4d4d;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.input-area {
+  margin-top: 1rem;
+}
+
+.colorful-input {
+  padding: 0.7rem;
+  width: 70%;
+  margin-right: 1rem;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.colorful-button {
+  background: #ff9933;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1rem;
+}
+
+.colorful-button:hover {
+  background: #e67300;
+}
+
+.preview-area {
+  margin-top: 2rem;
+}
+
+.meme-preview {
+  margin-top: 1rem;
+  width: 300px;
+  height: auto;
+  border: 5px solid #4CAF50;
+  border-radius: 15px;
+}
+
+.download-button {
+  margin-top: 1rem;
+  background: #4CAF50;
+}
+
+.download-button:hover {
+  background: #388E3C;
+}
